@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:id="@+id/child1layout"
+    >
+    
+    <Button
+    android:text="Node 1"  
+    android:layout_height="135px"
+    android:layout_width="400px"
+    />
+    
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+<Button  
+	android:id="@+id/child1"
+    android:text="Child 1"  
+    android:layout_height="100px"
+    android:layout_width="350px"
+    android:layout_alignParentTop="true"
+    />
+        <ImageView
+        android:id="@+id/child1subframe"
+    android:layout_height="100px"
+    android:layout_width="550px"
+    android:background="@drawable/subtreeframe"
+    android:layout_toRightOf="@id/child1"
+    android:visibility="invisible"
+    />
+    <Button
+    android:id="@+id/leaf1"
+    android:layout_height="50px"
+    android:layout_width="wrap_content"
+    android:layout_alignLeft="@id/child1subframe"
+    android:layout_below="@id/child1subframe"
+    android:text="Leaf 1"
+    android:background = "#ffdddddd"
+    android:visibility="invisible"
+    android:paddingLeft="10px"
+    />
+<Button
+    android:id="@+id/leaf2"
+    android:layout_height="50px"
+    android:layout_width="wrap_content"
+    android:layout_alignRight="@id/child1subframe"
+    android:layout_below="@id/child1subframe"
+    android:text="Leaf 2"
+    android:background = "#ffdddddd"
+    android:visibility="invisible"
+    android:paddingRight="10px"
+    />
+
+ 
+    <Button  
+	android:id="@+id/child11"
+    android:text="Child 11"
+    android:layout_height="100px"
+    android:layout_width="350px"
+    android:layout_below="@id/child1"
+    />
+    <Button  
+	android:id="@+id/child12"
+    android:text="Child 12"
+    android:layout_height="100px"
+    android:layout_width="350px"
+    android:layout_below="@id/child11"
+    
+    />
+    
+    <Button  
+	android:id="@+id/child13"
+    android:text="Child 13"  
+    android:layout_height="100px"
+    android:layout_width="350px"
+    android:layout_below="@id/child12"
+    />
+    
+    </RelativeLayout>
+
+</LinearLayout>

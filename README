@@ -1,0 +1,13 @@
+Android Navigation
+
+This is the source code for a simple app which lets you navigate through a tree.
+
+Clicking on the items enables or disables the items below them. Only the leftmost items are working in this example.
+
+Clicking on Home toggles the tree appearing below it.
+
+This app requires permission to read files from the SD card ( to launch PDFs from the application using the inbuilt PDF readers).
+
+Use ImageButtons, Toggle Buttons and other elements to customise the UI. This app is not what the prototype I made looks like, nor is it what any app should look like. This can just be a starting point for you to get started quickly.
+
+I wrote this sample app as a quick prototype on a 10 inch tablet, so scaling has not been taken care of.
